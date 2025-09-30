@@ -1,5 +1,5 @@
--name: Install nginx and start
- hosts: frontend
+- name: Install nginx and start
+  hosts: frontend
 
   tasks:
   - name: install nginx
