@@ -1,0 +1,75 @@
+- name: "raja shekar p"
+  dob: "12-08-1986"
+  age: 23
+
+  addresses:
+
+  - doorNo: 1-4-42
+    street: "thirumala homes"
+    city: hyderabad
+    pin: 33938943
+    type: current
+
+  - doorNo: 1-4-42
+    street: "thirumala homes"
+    city: hyderabad
+    pin: 33938943
+    type: perm
+
+  skills:
+
+  - java
+  - cloud
+  - middleware
+  - devops
+
+
+- name: "devansh p"
+  dob: "12-08-1986"
+  age: 23
+
+  addresses:
+
+  - doorNo: 1-4-42
+    street: "thirumala homes"
+    city: hyderabad
+    pin: 33938943
+    type: current
+
+  - doorNo: 1-4-42
+    street: "thirumala homes"
+    city: hyderabad
+    pin: 33938943
+    type: perm
+
+  skills:
+
+  - java
+  - cloud
+  - middleware
+  - devops
+
+- name: "lavanya p"
+  dob: "12-08-1986"
+  age: 23
+
+  addresses:
+
+  - doorNo: 1-4-42
+    street: "thirumala homes"
+    city: hyderabad
+    pin: 33938943
+    type: current
+
+  - doorNo: 1-4-42
+    street: "thirumala homes"
+    city: hyderabad
+    pin: 33938943
+    type: perm
+
+  skills:
+
+  - java
+  - cloud
+  - middleware
+  - devops

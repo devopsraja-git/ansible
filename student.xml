@@ -1,0 +1,80 @@
+<!-- List of student objects -->
+
+<Students>
+
+    <Student>
+        <Name>Rajashekar</Name>
+        <DOB>23-09-0987</DOB>
+        <Age>23</Age>
+
+        <Addresses>
+            <Address type="PERM">
+                <DoorNo>1-4-43</DoorNo>
+                <Street>trmshomes</Street>
+                <PIN>501510</PIN>
+            </Address>
+            <Address>
+                <DoorNo>1-4-43</DoorNo>
+                <Street>trmshomes</Street>
+                <PIN>501510</PIN>
+            </Address>
+        </Addresses>
+
+        <Skills>
+            <Skill>Java</Skill>
+            <Skill>DevOps</Skill>
+            <Skill>Cloud</Skill>
+        </Skills>
+    </Student>
+
+
+    <Student>
+        <Name>Lavanya</Name>
+        <DOB>23-09-0987</DOB>
+        <Age>23</Age>
+
+        <Addresses>
+            <Address type="PERM">
+                <DoorNo>1-4-43</DoorNo>
+                <Street>trmshomes</Street>
+                <PIN>501510</PIN>
+            </Address>
+            <Address>
+                <DoorNo>1-4-43</DoorNo>
+                <Street>trmshomes</Street>
+                <PIN>501510</PIN>
+            </Address>
+        </Addresses>
+
+        <Skills>
+            <Skill>Java</Skill>
+            <Skill>DevOps</Skill>
+            <Skill>Cloud</Skill>
+        </Skills>
+    </Student>
+
+    <Student>
+        <Name>Devansh</Name>
+        <DOB>23-09-0987</DOB>
+        <Age>23</Age>
+
+        <Addresses>
+            <Address type="PERM">
+                <DoorNo>1-4-43</DoorNo>
+                <Street>trmshomes</Street>
+                <PIN>501510</PIN>
+            </Address>
+            <Address>
+                <DoorNo>1-4-43</DoorNo>
+                <Street>trmshomes</Street>
+                <PIN>501510</PIN>
+            </Address>
+        </Addresses>
+
+        <Skills>
+            <Skill>Java</Skill>
+            <Skill>DevOps</Skill>
+            <Skill>Cloud</Skill>
+        </Skills>
+    </Student>
+</Students>
