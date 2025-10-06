@@ -9,7 +9,7 @@
 
     - name: password
       prompt: What is your password?
-      private: true
+      # private: true
 
   tasks:
   - name: print credentials
