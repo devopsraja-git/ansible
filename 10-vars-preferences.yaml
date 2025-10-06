@@ -2,8 +2,8 @@
   hosts: local
   connection: local
 
-  vars:
-    NAME: From PLAY Level
+  # vars:
+  #   NAME: From PLAY Level
 
   # vars_files:
   # - course.yaml
@@ -25,4 +25,5 @@
 # 2. task level
 # 3. files level
 # 4. from prompt
-# 5. 
+# 5. from play level
+# 6. 
