@@ -3,7 +3,7 @@
   connection: local
 
   vars:
-    number: 9
+    number: 12
 
   tasks:
   - name: check number is less than 10 or not
