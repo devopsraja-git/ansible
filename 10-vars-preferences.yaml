@@ -15,9 +15,12 @@
 
   tasks:
   - name: check var preferences
-    vars:
-      NAME: From TASK Level
+    # vars:
+    #   NAME: From TASK Level
     ansible.builtin.debug:
       msg: "NAME: {{ NAME }}"
 
-      
+  
+# 1. command level
+# 2. task level
+# 3. 
