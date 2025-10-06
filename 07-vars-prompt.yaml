@@ -1,0 +1,13 @@
+- name: prompting variables as input
+  hosts: local
+  connection: local
+
+  vars_prompt:
+    - name: username
+      prompt: What is your username?
+      private: false
+
+  tasks:
+  - name: print credentials
+    ansible.builtin.debug:
+      msg: "Hi, you are logged in as User: {{ username }}"
