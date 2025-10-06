@@ -9,5 +9,7 @@
 
   tasks:
   - name: Print course DETAILS
+    vars:             #task level variable will override play level vars#
+      COURSE: Ansible
     ansible.builtin.debug:
       msg: "Course name is: {{ COURSE }}, Duration is: {{ DURATION }}, Trainer name is: {{ TRAINER }}"
