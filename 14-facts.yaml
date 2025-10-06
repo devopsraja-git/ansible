@@ -1,6 +1,7 @@
 - name: set facts manually from ansible facts
   hosts: local
   connection: local
+  become: yes
 
   tasks:
   - name: install nginx if redhat
