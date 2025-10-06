@@ -3,16 +3,16 @@
   connection: local
 
   vars:
-    COURSE: DevOps with AWS
-    DURATION: 15
-    is_live: true
-
+    COURSE: DevOps with AWS #string
+    DURATION: 15  #number
+    is_live: true #boolean
+      ## list
     tools: #["ansible", "git", "linux", "shell"]
     - ansible
     - "git"
     - linux #"linux"
     - shell
-
+      ## dictionary or map
     concepts:
       cloud: AWS
       cm: ansible
