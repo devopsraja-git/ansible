@@ -43,5 +43,9 @@
     ansible.builtin.debug:
       msg: " Hi, student data is: {{ student_content | to_json }}"
 
+  - name: copy data to a file
+    ansible.builtin.copy:
+      msg: "Hi, the student's data in json file is: {{ student_content | to_nice_json }} | student-data.json "
+
 
 
