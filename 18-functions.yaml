@@ -5,4 +5,4 @@
   tasks:
   - name: default variables
     ansible.builtin.debug:
-      msg: "Hi, name "
+      msg: "Hi, {{ name }} "
