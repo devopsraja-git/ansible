@@ -45,7 +45,9 @@
 
   - name: copy data to a file
     ansible.builtin.copy:
-      msg: "Hi, the student's data in json file is: {{ student_content | to_nice_json }} | student-data.json "
+      content: "{{ student_content | to_nice_json }}"
+      dest: ./student-data.json
+      
 
 
 
