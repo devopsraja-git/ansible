@@ -64,6 +64,10 @@
       msg: "{{ ipaddress | ansible.utils.ipaddr }}"
 
   - name: grep for root user
-    ansible.builtin.shell: cat /etc/password |grep root
+    ansible.builtin.shell: cat /etc/password | grep root
     register: command_output
+
+  - name: print the grep output
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"
 
