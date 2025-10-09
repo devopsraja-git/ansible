@@ -12,5 +12,5 @@
 
   - name: string vars into list
     ansible.builtin.debug:
-      msg: "Hi, {{ technologies }}"
+      msg: "Hi, {{ technologies | split(',')}}"
 
