@@ -11,7 +11,7 @@
       Application: roboshop
       Environment: Dev
 
-    lstTags:
+    listTags:
     - key: Application
       value: roboshop
     - key: Environment
