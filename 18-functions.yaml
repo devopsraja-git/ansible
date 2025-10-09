@@ -23,7 +23,7 @@
 
   - name: data like dictionary or map into list
     ansible.builtin.debug:
-      msg: "Hi, tag list is: {{ tags }}"
+      msg: "Hi, tag list is: {{ tags | dict2items }}"
 
 
 
