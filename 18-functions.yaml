@@ -35,5 +35,13 @@
     ansible.builtin.debug:
       msg: "Hi, listed tags are: {{ listTags | items2dict }}"
 
+  - name: convert yaml to json data
+    ansible.builtin.set_fact:
+      student_content: "{{ lookup('ansible.builtin.file', 'student.yaml') }}"
+
+  - name: show student data
+    ansible.builtin.debug:
+      msg: " Hi, student data is: {{ student_content | to_json }}"
+
 
 
