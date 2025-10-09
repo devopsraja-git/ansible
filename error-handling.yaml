@@ -1,6 +1,7 @@
 - name: user creation
   hosts: local
   connection: local
+  become: yes
 
   tasks:
     - name: check if user exist or not
