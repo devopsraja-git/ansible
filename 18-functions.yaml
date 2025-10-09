@@ -4,6 +4,7 @@
 
   vars: 
     technologies: Ansible, Shell, DevOps, Linux, AWS #String vars
+    name: "Raja Shekar p"
 
     #dictionary == map
 
@@ -47,6 +48,10 @@
     ansible.builtin.copy:
       content: "{{ student_yaml | to_nice_json }}"
       dest: ./student-data.json
+
+  - name: convert to uppercase
+    ansible.builtin.debug:
+      msg: "Hi, name | upper "
       
 
 
