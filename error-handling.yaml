@@ -9,3 +9,7 @@
     register: command_output
     ignore_errors: yes
 
+  - name: print command_output
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"
+
