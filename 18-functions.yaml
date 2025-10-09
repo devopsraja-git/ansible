@@ -46,7 +46,7 @@
   #   ansible.builtin.debug:
   #     msg: " Hi, student data is: {{ student_yaml | to_json }}"
 
-  - name: copy data to a file
+  - name: convert data to json and store in a output file
     ansible.builtin.copy:
       content: "{{ student_yaml | to_nice_json }}"
       dest: ./student-data.json
@@ -62,4 +62,8 @@
   - name: Check IP is valid or not
     ansible.builtin.debug:
       msg: "{{ ipaddress | ansible.utils.ipaddr }}"
+
+  - name: grep for root user
+    ansible.builtin.command: cat /etc/password |grep root
+    register: command_output
 
