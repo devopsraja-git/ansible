@@ -4,6 +4,13 @@
 
   vars:
     technologies: Ansible, AWS, DevOps, Shell #String variables
+      #dictionary == map
+    tags:
+      Application: shipping
+      Environment: Dev
+
+    
+
   tasks:
   - name: default variables
     ansible.builtin.debug:
@@ -12,3 +19,7 @@
   - name: split and print string variables.
     ansible.builtin.debug:
       msg: "Hi, Technologies are: {{ technologies | split(',')}}"
+
+  - name: convert tags to list
+    ansible.builtin.debug:
+      msg: "Hi, tags are: {{ tags | dict2items }}"
