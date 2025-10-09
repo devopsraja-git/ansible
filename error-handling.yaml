@@ -3,9 +3,9 @@
   connection: local
   become: yes
 
-  tasks: check user exist or not
-  ansible.builtin.command: id roboshop
-  register: command_output
-  ignore_errors: yes
+  tasks: 
+  - name: check user exist or not
+    ansible.builtin.command: id roboshop
+    register: command_output
+    ignore_errors: yes
 
-  
