@@ -33,7 +33,7 @@
 
   - name: data list into map or dictionary
     ansible.builtin.debug:
-      msg: "Hi, listed tags are: {{ listTags }}"
+      msg: "Hi, listed tags are: {{ listTags | items2dict }}"
 
 
 
