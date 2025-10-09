@@ -12,4 +12,8 @@
       ansible.builtin.debug:
         msg: "{{ user_output }}"
 
+    - name: creat user if not existing
+      ansible.builtin.command: useradd roboshop
+      when: user_output.rc != 0
+
 
