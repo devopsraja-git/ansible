@@ -6,7 +6,7 @@
     technologies: Ansible, Shell, DevOps, Linux, AWS #String vars
     name: "Raja Shekar p"
     mail: "INFO@ZOHOMAIL.IN"
-    ipaddress: 232.2323243.34333
+    ipaddress: 192.168.3.56
 
     #dictionary == map
 
