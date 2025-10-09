@@ -39,9 +39,9 @@
     ansible.builtin.set_fact:
       student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
 
-  - name: show student data
-    ansible.builtin.debug:
-      msg: " Hi, student data is: {{ student_yaml | to_json }}"
+  # - name: show student data
+  #   ansible.builtin.debug:
+  #     msg: " Hi, student data is: {{ student_yaml | to_json }}"
 
   - name: copy data to a file
     ansible.builtin.copy:
