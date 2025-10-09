@@ -5,6 +5,13 @@
   vars: 
     technologies: Ansible, Shell, DevOps, Linux, AWS #String vars
 
+    #dictionary == map
+
+    tags:
+      Application: roboshop
+      Environment: Dev
+
+
   tasks:
   - name: default variables
     ansible.builtin.debug:
@@ -13,4 +20,10 @@
   - name: string vars into list
     ansible.builtin.debug:
       msg: "Hi, {{ technologies | split(',')}}"
+
+  - name: data like dictionary or map into list
+    ansible.builtin.debug:
+      msg: "Hi, tag list is: {{ tags }}"
+
+
 
