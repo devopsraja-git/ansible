@@ -4,7 +4,7 @@
 
   tasks:
     - name: check if user exist or not
-      ansible.builtin.command: id Rajashekar
+      ansible.builtin.command: id rajashekar
       register: user_output
       ignore_errors: true
 
@@ -12,8 +12,8 @@
       ansible.builtin.debug:
         msg: "{{ user_output }}"
 
-    - name: creat user if not existing
-      ansible.builtin.command: useradd Rajashekar
+    - name: create user if not existing
+      ansible.builtin.command: useradd rajashekar
       when: user_output.rc != 0
 
 
