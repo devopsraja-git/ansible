@@ -9,7 +9,11 @@
       Application: shipping
       Environment: Dev
 
-    
+    listTags:
+    - key: Application
+      value: shipping
+    - key: Environment
+      value: Dev
 
   tasks:
   - name: default variables
@@ -23,3 +27,7 @@
   - name: convert tags to list
     ansible.builtin.debug:
       msg: "Hi, tags are: {{ tags | dict2items }}"
+
+  - name: convert keylist to tags
+    ansible.builtin.debug:
+      msg: "Hi, ListedTags are: {{ listTags | items2dict }}"
