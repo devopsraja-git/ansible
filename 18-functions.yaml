@@ -71,3 +71,11 @@
     ansible.builtin.debug:
       msg: "{{ command_output }}"
 
+  - name: redirect the output
+    ansible.builtin.command: ls -ltr /etc/passwd > users_output.txt
+    register: redirect_output
+
+  - name: print redirect output
+    ansible.builtin.debug:
+      msg: "{{ redirect_output }}"
+
