@@ -6,6 +6,7 @@
     technologies: Ansible, Shell, DevOps, Linux, AWS #String vars
     name: "Raja Shekar p"
     mail: "INFO@ZOHOMAIL.IN"
+    ipaddress: 232.2323243.34333
 
     #dictionary == map
 
@@ -57,4 +58,8 @@
   - name: convert to lowercase
     ansible.builtin.debug:
       msg: "mail id is: {{ mail | lower }}"
+
+  - name: Check IP is valid or not
+    ansible.builtin.debug:
+    msg: "{{ ipaddress | ansible.utils.ipaddr }}"
 
