@@ -11,6 +11,12 @@
       Application: roboshop
       Environment: Dev
 
+    lstTags:
+    - key: Application
+      value: roboshop
+    - key: Environment
+      value: Dev
+
 
   tasks:
   - name: default variables
@@ -24,6 +30,10 @@
   - name: data like dictionary or map into list
     ansible.builtin.debug:
       msg: "Hi, tag list is: {{ tags | dict2items }}"
+
+  - name: data list into map or dictionary
+    ansible.builtin.debug:
+      msg: "Hi, listed tags are: {{ listTags }}"
 
 
 
