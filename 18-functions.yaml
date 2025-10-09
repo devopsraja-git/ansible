@@ -5,7 +5,7 @@
   vars: 
     technologies: Ansible, Shell, DevOps, Linux, AWS #String vars
     name: "Raja Shekar p"
-    gmail: "INFO@ZOHOMAIL.IN"
+    mail: "INFO@ZOHOMAIL.IN"
 
     #dictionary == map
 
@@ -56,5 +56,5 @@
       
   - name: convert to lowercase
     ansible.builtin.debug:
-      msg: "Gmail id is: {{ gmail | lower }}"
+      msg: "mail id is: {{ mail | lower }}"
 
